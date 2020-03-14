@@ -39,4 +39,7 @@ ssh-keygen -t rsa -f ~bdowns/.ssh/id_rsa -q -P ""
 chown -R bdowns:wheel ~bdowns
 chsh -s /usr/local/bin/zsh bdowns
 
+wget https://dl.google.com/go/go1.14.freebsd-amd64.tar.gz
+tar -C /usr/local -xzf go1.14.freebsd-amd64.tar.gz
+
 exit 0

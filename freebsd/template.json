@@ -43,7 +43,8 @@
             "type": "shell",
             "scripts": [
                 "scripts/base.sh",
-                "scripts/vagrant.sh"
+                "scripts/vagrant.sh",
+                "scripts/custom_kernel.sh"
             ],
             "execute_command": "chmod +x {{ .Path }}; /bin/sh -c '{{ .Vars }} {{ .Path }}'"
         },
