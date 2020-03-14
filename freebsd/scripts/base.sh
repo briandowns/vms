@@ -37,6 +37,6 @@ echo "bdowns" | pw useradd bdowns -h 0 -s /bin/sh -G wheel -c "bdowns"
 mkdir -pm 700 ~bdowns/.ssh
 ssh-keygen -t rsa -f ~bdowns/.ssh/id_rsa -q -P ""
 chown -R bdowns:wheel ~bdowns
-chsh -s /usr/local/bin/zsh
+chsh -s /usr/local/bin/zsh bdowns
 
 exit 0
