@@ -127,7 +127,7 @@ device		netmap
 " > /root/kernel/custom_kernel
 
 cd /usr/src
-make buildkernel KERNCONF=custom_kernel && \
-make installkernel KERNCONF=custom_kernel
+make -j 2 buildkernel KERNCONF=custom_kernel && \
+make -j 2 installkernel KERNCONF=custom_kernel
 
 exit 0
